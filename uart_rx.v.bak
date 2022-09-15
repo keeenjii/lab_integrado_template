@@ -4,9 +4,7 @@ input clk, rst, rxd;
 output [7:0] rx_data;
 output rx_data_fresh;
 
-parameter CLK_HZ = 50_000_000;
-parameter BAUD = 9600;
-parameter BAUD_DIVISOR = CLK_HZ / BAUD;
+parameter BAUD_DIVISOR = 5208;
 
 reg [15:0] sample_cntr;
 reg [7:0] rx_shift;
